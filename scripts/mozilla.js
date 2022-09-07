@@ -10,7 +10,7 @@ myImage.onclick = () => {
 };
 
 document.onclick = () => {
-    const myHeading = document.querySelector("h1");
+    const myHeading = document.querySelector("h1:nth-child(2)");
     if (myHeading.textContent === "Mozilla is cool") {
         myHeading.textContent = "or is it?";
     } else {
@@ -19,7 +19,7 @@ document.onclick = () => {
 };
 
 let myButton = document.querySelector("button");
-let myHeading = document.querySelector("h2");
+let myHeading = document.querySelector("h1");
 
 function setUserName() {
     const myName = prompt("Please enter your name.");
