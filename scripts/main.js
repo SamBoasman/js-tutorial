@@ -23,8 +23,13 @@ let myHeading = document.querySelector("h2");
 
 function setUserName() {
     const myName = prompt("Please enter your name.");
-    localStorage.setItem("name", myName);
-    myHeading.textContent = `Welcome, ${myName}`;
+    if (!myName) {
+        console.log("empty name");
+        myHeading.textContent = "Welcome!";
+    } else {
+        localStorage.setItem("name", myName);
+        myHeading.textContent = `Welcome, ${myName}`;
+    }
 }
 
 if (!localStorage.getItem("name")) {
