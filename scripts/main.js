@@ -8,3 +8,12 @@ myImage.onclick = () => {
         myImage.setAttribute("src", "images/firefox-icon.png");
     }
 };
+
+document.onclick = () => {
+    const myHeading = document.querySelector("h1");
+    if (myHeading.textContent === "Mozilla is cool") {
+        myHeading.textContent = "or is it?";
+    } else {
+        myHeading.textContent = "Mozilla is cool";
+    }
+};
