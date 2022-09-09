@@ -1,0 +1,17 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 60%;
+}
+
+.form {
+    width: 300px;
+
+    display: flex;
+    justify-content: space-between;
+}
