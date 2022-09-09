@@ -9,6 +9,12 @@
     width: 60%;
 }
 
+.form-container {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .form {
     width: 300px;
 
