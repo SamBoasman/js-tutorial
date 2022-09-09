@@ -10,14 +10,16 @@
 }
 
 .form-container {
-    width: 60%;
     display: flex;
     justify-content: flex-start;
+
+    width: 60%;
+    margin-bottom: 2rem;
 }
 
 .form {
-    width: 300px;
-
     display: flex;
     justify-content: space-between;
+
+    width: 300px;
 }
